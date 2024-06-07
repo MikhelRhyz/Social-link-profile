@@ -1,0 +1,93 @@
+:root {
+  /* Primary */
+  --Green: hsl(75, 94%, 57%);
+
+  /* Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+}
+
+p.text-green {
+  color: var(--Green);
+  font-weight: 500;
+}
+
+.btn {
+  background-color: rgba(100, 100, 100, 0.3);
+  border: none !important;
+  color: white !important;
+  font-weight: 500 !important;
+  font-size: 0.9rem !important;
+}
+
+button.btn:active {
+  background-color: var(--Green)!important;
+  color: var(--Off-Black) !important;
+}
+
+.btn.focus,
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-group-vertical > .btn-group:not(:last-child) > .btn,
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn-group:not(:first-child) > .btn,
+.btn-group-vertical > .btn:not(:first-child) {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.btn-group-vertical>.btn-group:not(:first-child)>.btn, .btn-group-vertical>.btn:not(:first-child) {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+p.card-text {
+  font-weight: 200;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+p {
+  font-size: 14px;
+}
+
+.card {
+  background-color: #1c1c1c;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.btn-group-vertical .btn {
+  border: 1px solid #4a4a4a;
+  color: #ccc;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-group-vertical .btn:hover,
+.btn-group-vertical .btn:focus {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-group-vertical .btn.active {
+  background-color: #d8ff00;
+  color: #000;
+  border-color: #d8ff00;
+}
